@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe ”Komorebi Library” | 記憶をあやし、思考を綴る。光と緑が呼吸する場所</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom JS -->
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="header" class="site-header">
+        <div class="logo">
+            Komorebi Library
+        </div>
+        
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <a href="#about">About</a>
+            <a href="#spaces">Spaces</a>
+            <a href="#menu">Menu</a>
+            <a href="#library">Library</a>
+            <a href="#event">Event</a>
+            <a href="#access">Access</a>
+            <a href="#reserve" class="btn-reserve-outline">ご予約</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="メニューを開く">
+            <svg viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu-overlay">
+        <nav class="mobile-nav">
+            <a href="#about">About</a>
+            <a href="#spaces">Spaces</a>
+            <a href="#menu">Menu</a>
+            <a href="#library">Library</a>
+            <a href="#event">Event</a>
+            <a href="#access">Access</a>
+            <a href="#reserve" class="text-gold mt-4">ご予約</a>
+        </nav>
+    </div>
+
+    <!-- Main Visual (Hero) -->
+    <section class="hero-section">
+        <!-- Slideshow Backgrounds -->
+        <div id="slide1" class="hero-slide active">
+            <img src="img/mainvisual1.jpg" alt="">
+        </div>
+        <div id="slide2" class="hero-slide">
+            <img src="img/mainvisual2.jpg" alt="">
+        </div>
+        <div id="slide3" class="hero-slide">
+            <img src="img/mainvisual3.jpg" alt="">
+        </div>
+        
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Content -->
+        <div class="hero-content fade-in">
+            <p class="hero-tag">Cafe</p>
+            <h1 class="hero-title">
+                Komorebi<br>Library
+            </h1>
+            <p class="hero-subtitle">
+                記憶をあやし、思考を綴る<br>
+                光と緑が呼吸する場所
+            </p>
+            
+            <div class="hero-action">
+                <a href="#reserve" class="btn-reserve-large">
+                    席を予約する
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-line-container">
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept / About -->
+    <section id="about" class="section-about">
+        <div class="container-sm fade-in">
+            <h2 class="section-title color-forest">Our Story</h2>
+            
+            <div class="about-text">
+                <p>
+                    忙しい日常の中で、私たちはどれだけのものを置き去りにしてきたでしょうか。<br class="pc-only">
+                    ふと立ち止まったときに見失っている、自分自身の思い出や、大切にしたい感情。
+                </p>
+                <p>
+                    Komorebi Libraryは、そんな「記憶」を本と共に思い出し、<br class="pc-only">
+                    都会の空気から守られ、温かな光を浴びて心と体を整えるための場所です。
+                </p>
+                <p>
+                    ただのカフェではありません。<br>
+                    ここは、アンティークの家具と深い緑に囲まれ、<br class="pc-only">
+                    あなたが一人の時間を贅沢に味わうための、特別な場所です。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider fade-in"></div>
+
+    <!-- Spaces (The Nest & The Study) -->
+    <section id="spaces" class="section-spaces">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title color-forest">Two Spaces</h2>
+                <p class="section-subtitle">目的に合わせた、2つの空間をご用意しています</p>
+            </div>
+
+            <!-- The Nest -->
+            <div class="space-block fade-in">
+                <div class="space-image-wrapper">
+                    <img src="img/nest.jpg" alt="The Nest">
+                </div>
+                <div class="space-content">
+                    <p class="space-tag">静寂のエリア / デジタルデトックス空間</p>
+                    <h3 class="space-title">"The Nest" <span>〜思考の巣〜</span></h3>
+                    <div class="space-divider"></div>
+                    <p class="space-desc">
+                        スマートフォンの電源を切り、外界のノイズを遮断するエリアです。<br>
+                        体を包み込むような深いアンティークソファが並び、ほのかな間接照明が手元を照らします。<br><br>
+                        ここでは、選んだ本の世界に没入したり、ただ静かに自分自身の内面と向き合う時間をお過ごしいただけます。情報から離れ、「思考の巣」でゆっくりと羽を休める体験を提供します。
+                    </p>
+                </div>
+            </div>
+
+            <!-- The Study -->
+            <div class="space-block reverse fade-in">
+                <div class="space-image-wrapper">
+                    <img src="img/study.jpg" alt="The Study">
+                </div>
+                <div class="space-content">
+                    <p class="space-tag">創造のエリア / PC等使用可能空間</p>
+                    <h3 class="space-title">"The Study" <span>〜書斎〜</span></h3>
+                    <div class="space-divider"></div>
+                    <p class="space-desc">
+                        自分自身の思考を形にするための、インスピレーション溢れるエリアです。<br>
+                        重厚な木製のデスクと、手元を優しく照らす真鍮のデスクランプをご用意しています。<br><br>
+                        PCを開いての仕事、書き物、あるいはクリエイティブな活動に没頭することができます。植物の緑と木漏れ日が、あなたの創造力を静かに後押しします。（Wi-Fi・電源完備）
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider fade-in"></div>
+
+    <!-- Menu -->
+    <section id="menu" class="section-menu">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title color-forest">Menu</h2>
+                <p class="section-subtitle">自家焙煎珈琲と、物語を味わう一皿</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Coffee -->
+                <div class="menu-item fade-in">
+                    <div class="menu-image">
+                        <img src="img/coffee.jpg" alt="自家焙煎コーヒー">
+                    </div>
+                    <h4 class="menu-title">ブレンドコーヒー「記憶」</h4>
+                    <p class="menu-en">Roast Coffee "Memory"</p>
+                    <p class="menu-desc">
+                        深煎りで酸味を抑え、コクと苦味の中にほのかな甘みを感じる当店のシグネチャーブレンド。読書の傍らで、冷めても美味しく飲めるよう、丁寧に焙煎しています。
+                    </p>
+                </div>
+
+                <!-- Food -->
+                <div class="menu-item fade-in">
+                    <div class="menu-image">
+                        <img src="img/quiche.jpg" alt="物語のフード">
+                    </div>
+                    <h4 class="menu-title">あの森で食べたキッシュ</h4>
+                    <p class="menu-en">Story-Inspired Quiche</p>
+                    <p class="menu-desc">
+                        とある物語に登場する森の情景からインスピレーションを得たおしゃれな一皿。季節のキノコとほうれん草をたっぷり使い、アンティークのお皿で提供いたします。
+                    </p>
+                </div>
+
+                <!-- Sweets -->
+                <div class="menu-item fade-in">
+                    <div class="menu-image">
+                        <img src="img/tart.jpg" alt="秘密の花園のタルト">
+                    </div>
+                    <h4 class="menu-title">秘密の花園のタルト</h4>
+                    <p class="menu-en">Seasonal Fruit Tart</p>
+                    <p class="menu-desc">
+                        物語に登場する果樹園をイメージしたミニタルト。苺やブルーベリー、ラズベリーなど、季節の果実を贅沢に使った、どこか懐かしい味わい。お好きな組み合わせをお選びいただけます。
+                    </p>
+                </div>
+
+                <!-- Tea -->
+                <div class="menu-item fade-in">
+                    <div class="menu-image">
+                        <img src="img/butterfly.jpg" alt="夜間飛行のハーブティー">
+                    </div>
+                    <h4 class="menu-title">夜間飛行のハーブティー</h4>
+                    <p class="menu-en">Night Flight Herb Tea</p>
+                    <p class="menu-desc">
+                        満天の星空を駆ける飛行機を思わせる、静寂のハーブティー。バタフライピーの深い蒼色が、心を静かなリラックスへと誘います。<br>(レモン果汁を入れると色の変化が楽しめます。)
+                    </p>
+                </div>
+            </div>
+            
+            <div class="menu-note fade-in">
+                <p>※その他、季節のハーブティーや焼き菓子などもご用意しております。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library -->
+    <section id="library" class="section-library">
+        <div class="container">
+            <div class="library-header fade-in">
+                <div class="library-titles">
+                    <h2 class="section-title text-gold">Library</h2>
+                    <p class="section-subtitle opacity-80">本棚の片隅から</p>
+                </div>
+                <div class="library-desc">
+                    <p>店主が蒐集した古本や写真集、アートブックなど、約1,000冊の蔵書。自由に手に取り、お席でお楽しみいただけます。</p>
+                </div>
+            </div>
+
+            <div class="library-grid fade-in">
+                <!-- Book Item -->
+                <div class="book-item">
+                    <div class="book-image">
+                        <div class="book-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=2574&auto=format&fit=crop" alt="Book">
+                    </div>
+                    <h5 class="book-title">植物学者の手記</h5>
+                    <p class="book-category">植物・自然</p>
+                </div>
+                <!-- Book Item -->
+                <div class="book-item">
+                    <div class="book-image">
+                        <div class="book-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?q=80&w=2676&auto=format&fit=crop" alt="Book">
+                    </div>
+                    <h5 class="book-title">失われた時を求めて</h5>
+                    <p class="book-category">古典文学</p>
+                </div>
+                <!-- Book Item -->
+                <div class="book-item pc-book">
+                    <div class="book-image">
+                        <div class="book-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=2698&auto=format&fit=crop" alt="Book">
+                    </div>
+                    <h5 class="book-title">Nordic Interiors</h5>
+                    <p class="book-category">デザイン・建築</p>
+                </div>
+                <!-- Book Item -->
+                <div class="book-item pc-book">
+                    <div class="book-image">
+                        <div class="book-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=2574&auto=format&fit=crop" alt="Book">
+                    </div>
+                    <h5 class="book-title">静寂の哲学</h5>
+                    <p class="book-category">エッセイ・哲学</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event & News -->
+    <section id="event" class="section-event">
+        <div class="container-sm">
+            <div class="section-header fade-in">
+                <h2 class="section-title">News & Event</h2>
+                <p class="section-subtitle">日々のお知らせと催し</p>
+            </div>
+
+            <div class="event-list fade-in">
+                <!-- News Item -->
+                <article class="event-item">
+                    <time>2026.05.20</time>
+                    <div class="event-content">
+                        <span class="tag event">Event</span>
+                        <h3>【定員6名】第5回 沈黙の読書会のお知らせ</h3>
+                    </div>
+                </article>
+                
+                <!-- News Item -->
+                <article class="event-item">
+                    <time>2026.05.15</time>
+                    <div class="event-content">
+                        <span class="tag news">News</span>
+                        <h3>初夏の草花が入荷しました。テラス席に植え替えを行っています。</h3>
+                    </div>
+                </article>
+
+                <!-- News Item -->
+                <article class="event-item">
+                    <time>2026.04.28</time>
+                    <div class="event-content">
+                        <span class="tag event">Event</span>
+                        <h3>多肉植物の寄せ植えワークショップ開催（The Studyにて）</h3>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="event-more fade-in">
+                <a href="#">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access & Reservation CTA -->
+    <section id="access" class="section-access">
+        <div class="container">
+            <div class="access-flex fade-in">
+                <!-- Info -->
+                <div class="access-info">
+                    <h2 class="section-title text-gold">Access</h2>
+                    
+                    <div class="access-details">
+                        <div class="access-block">
+                            <p class="access-name">Cafe ”Komorebi Library”</p>
+                            <p>〒150-0000<br>東京都渋谷区〇〇 1-2-3 静寂ビル 2F</p>
+                        </div>
+                        <div class="access-block">
+                            <p class="access-label">Open</p>
+                            <p>火 - 金 : 13:00 - 22:00<br>土・日 : 10:00 - 20:00</p>
+                            <p class="access-note">※月曜定休</p>
+                        </div>
+                        <div class="access-block">
+                            <p class="access-label">Transport</p>
+                            <p>〇〇駅 南口より徒歩5分<br>路地裏のレンガ造りの建物の2階です。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map (Placeholder) -->
+                <div class="access-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479754683745!2d139.7016358152588!3d35.65858048020034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1680000000000!5m2!1sja!2sjp" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reservation CTA Box -->
+        <div id="reserve" class="reserve-box fade-in">
+            <h2>ご予約</h2>
+            <p class="reserve-desc">
+                週末は混雑が予想されます。お客様の「一人の時間」を大切にするため、<br class="pc-only">
+                事前のお席のご予約（The Nest / The Studyの指定）をお勧めしております。
+            </p>
+            <a href="#" class="btn-gold-solid">
+                オンラインで席を予約する
+            </a>
+            <p class="reserve-note">※外部の予約システムへ移動します。</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <h3 class="section-title">SNS</h3>
+        <div class="footer-social">
+            <ul>
+                <li class="sns-icon"><a href="https://www.instagram.com/?hl=ja"><img src="img/Instagram_Glyph_White.png" alt="" width="40px" height="40px"></a></li>
+                <li class="sns-icon"><a href="https://x.com"><img src="img/x-logo-white.png" alt="" width="40px" height="40px"></a></li>
+            </ul>
+        </div>
+        <p>&copy; 2026 Cafe Komorebi Library. </p>
+    </footer>
+
+</body>
+</html>

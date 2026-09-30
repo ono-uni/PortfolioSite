@@ -1,0 +1,14 @@
+# OS / エディタが生成するファイル
+.DS_Store
+.vscode/
+.claude/
+
+# サイトで使っていない、重すぎる元データ
+# （GitHubは1ファイル100MB超をpushできません）
+PFサイト/img/like06.mov
+PFサイト/img/like07.mov
+PFサイト/img/like08.MOV
+バナー/*.ai
+
+# サイトに関係ない個人的な資料
+Seed_改善提案.pptx.pdf

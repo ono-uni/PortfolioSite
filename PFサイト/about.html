@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Ono's Portfolio</title>
+  <meta name="description" content="Webデザイナー Ono の考え方・制作への姿勢">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ========== ヘッダー / ナビゲーション ========== -->
+  <header class="header">
+    <div class="header__inner">
+      <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <nav class="nav" aria-label="メインメニュー">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Top</a></li>
+          <li class="nav__item"><a href="profile.html" class="nav__link">Profile</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link is-active">About</a></li>
+          <li class="nav__item"><a href="work.html" class="nav__link">Work</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== About ページ ========== -->
+    <section class="page-hero">
+      <h1 class="page-hero__title">About</h1>
+    </section>
+
+    <!-- リード文 -->
+    <section class="about-lead fade-in">
+      <p class="about-lead__text">
+        <!-- 「見た目がきれい」だけで終わらない。<br> -->
+        伝えるためのデザインを<br>丁寧につくります。
+      </p>
+    </section>
+
+    <!-- 考え方・姿勢 -->
+    <section class="about-list fade-in">
+      <article class="about-item">
+        <h2 class="about-item__title">01&nbsp;&nbsp;Attitude</h2>
+        <p class="about-item__text">
+          相手の想いやサービスの魅力をきちんとくみ取り、形にすることを大切にしています。
+          わからないことは素直に聞き、仮説を立てて試し、改善を重ねる。
+          その繰り返しが、良い作品につながると考えています。
+        </p>
+      </article>
+
+
+      <article class="about-item">
+        <h2 class="about-item__title">02&nbsp;&nbsp;Design</h2>
+        <p class="about-item__text">
+          余白・文字組み・色のバランスを大切にしています。
+          情報が整理されて初めて、デザインは「伝わる」ものになると考えています。
+          見た人が迷わず、すっと情報が伝わる画面づくりを心がけています。
+        </p>
+      </article>
+
+      <article class="about-item">
+        <h2 class="about-item__title">03&nbsp;&nbsp;Code</h2>
+        <p class="about-item__text">
+          デザインしたものを、そのまま実装することを心がけています。
+          HTML / CSS / JavaScript を用いて、再現性の高いコーディングを行い、
+          デザインと実装のあいだにすき間をつくらない制作を目指しています。
+        </p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">&copy; Ono's Portfolio</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Ono's Portfolio</title>
+  <meta name="description" content="Webデザイナー Ono のプロフィール・好きなこと・スキルをご紹介します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-profile">
+  <!-- ========== ヘッダー / ナビゲーション ========== -->
+  <header class="header">
+    <div class="header__inner">
+      <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <nav class="nav" aria-label="メインメニュー">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Top</a></li>
+          <li class="nav__item"><a href="profile.html" class="nav__link is-active">Profile</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="work.html" class="nav__link">Work</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="profile-main">
+    <!-- ========== Profile ページ ========== -->
+    <section class="page-hero">
+      <h1 class="page-hero__title">Profile</h1>
+    </section>
+
+    <!-- ---------- プロフィール紹介 ---------- -->
+    <section class="profile fade-in">
+      <div class="profile__inner">
+        <div class="profile__text">
+          <p class="profile__name">Ono</p>
+          <p class="profile__role">Web Code / Design</p>
+          <p>
+            お客様の想いやサービスの魅力が、見た人にきちんと伝わる作品制作を大切にしています。
+            レイアウト・タイポグラフィ・余白のバランスを意識しながら、使いやすく美しいWebサイトづくりに取り組んでいます。
+          </p>
+          <p>
+            <!-- HTML / CSS / JavaScript でのコーディングも行い、デザインから実装まで一貫して対応できます。 -->
+            今後も、伝わるデザインと丁寧な実装を通じて、価値のある制作をしていきたいです。
+          </p>
+        </div>
+        <div class="profile__image">
+          <img src="img/profile02.JPG" alt="Onoのプロフィール写真" width="400" height="400">
+        </div>
+      </div>
+    </section>
+    
+    <!-- ---------- Skills（スキル） ---------- -->
+    <section class="skills fade-in">
+      <!--
+        3×3のグリッド。
+        中央セルに「Skills」、周囲に使用できる技術を配置します。
+      -->
+      <div class="grid-3x3 grid-3x3--skills">
+        <div class="grid-3x3__item grid-3x3__item--skill">
+          <span class="skill-name">HTML</span>
+          <p class="skill__caption">オリジナルのWebサイトを制作しています。<br>デザインカンプからのコーディング、レスポンシブ対応が可能です。</p>
+        </div>
+        <div class="grid-3x3__item grid-3x3__item--skill">
+          <span class="skill-name">CSS</span>
+          <p class="skill__caption">オリジナルのWebサイトを制作しています。<br>デザインカンプからのコーディング、レスポンシブ対応が可能です。</p>
+        </div>
+        <div class="grid-3x3__item grid-3x3__item--skill">
+          <span class="skill-name">JavaScript</span>
+          <p class="skill__caption">ハンバーガーメニュー、スライダーなど、基本的な動的パーツの実装が可能です。</p>
+        </div>
+        <div class="grid-3x3__item grid-3x3__item--skill">
+          <span class="skill-name">jQuery</span>
+          <p class="skill__caption">ハンバーガーメニュー、スライダーなど、基本的な動的パーツの実装が可能です。</p>
+        </div>
+        <!-- 中央：タイトル -->
+        <div class="grid-3x3__item grid-3x3__item--center">
+          <span class="grid-3x3__title">Skills</span>
+        </div>
+        <div class="grid-3x3__item grid-3x3__item--skill">
+          <span class="skill-name">Photoshop</span>
+          <p class="skill__caption">写真の色調補正、不要物の除去、トーンカーブやマスクを使った合成処理が可能です。</p>
+        </div>
+        <div class="grid-3x3__item grid-3x3__item--skill">
+          <span class="skill-name">Illustrator</span>
+          <p class="skill__caption">パーツ作成・バナー制作が可能です。</p>
+        </div>
+        <div class="grid-3x3__item grid-3x3__item--skill">
+          <span class="skill-name">Figma</span>
+          <p class="skill__caption">AutoLayoutを使用したワイヤーフレーム、デザインカンプ制作が可能です。</p>
+        </div>
+        <div class="grid-3x3__item grid-3x3__item--skill">
+          <span class="skill-name">Canva</span>
+          <p class="skill__caption">プレゼン資料・SNS用画像制作が可能です。</p>
+        </div>
+      </div>
+    </section>
+      <!-- ---------- Like（好きなこと：和太鼓「志童」） ---------- -->
+      <section class="like fade-in">
+        
+        <!--
+          3×3のグリッド。
+          中央セルに「Like」、周囲8マスに和太鼓（志童）の写真・動画を配置します。
+          動画のセルはクリックするとポップアップで再生されます。
+          -->
+          <div class="grid-3x3">
+            <div class="grid-3x3__item">
+              <img src="img/like01.jpg" alt="和太鼓「志童」の演奏の様子" width="200" height="200">
+            </div>
+            <button type="button" class="grid-3x3__item like__video-trigger" data-video-src="img/like06.mov" aria-label="和太鼓「志童」の演奏動画を再生">
+              <img src="img/like06-poster.jpg" alt="和太鼓「志童」の演奏動画" width="200" height="200">
+              <span class="like__play-icon" aria-hidden="true"></span>
+            </button>
+            <div class="grid-3x3__item">
+              <img src="img/like02-web.jpg" alt="和太鼓「志童」の演奏の様子" width="200" height="200">
+            </div>
+            <button type="button" class="grid-3x3__item like__video-trigger" data-video-src="img/like07.mov" aria-label="和太鼓「志童」の演奏動画を再生">
+              <img src="img/like07-poster.jpg" alt="和太鼓「志童」の演奏動画" width="200" height="200">
+              <span class="like__play-icon" aria-hidden="true"></span>
+            </button>
+            <!-- 中央：タイトル -->
+            <div class="grid-3x3__item grid-3x3__item--center">
+              <span class="grid-3x3__title">Like</span>
+            </div>
+            <button type="button" class="grid-3x3__item like__video-trigger" data-video-src="img/like08.MOV" aria-label="和太鼓「志童」の演奏動画を再生">
+              <img src="img/like08-poster.jpg" alt="和太鼓「志童」の演奏動画" width="200" height="200">
+              <span class="like__play-icon" aria-hidden="true"></span>
+            </button>
+            <div class="grid-3x3__item">
+              <img src="img/like03.jpg" alt="和太鼓「志童」の演奏の様子" width="200" height="200">
+            </div>
+            <div class="grid-3x3__item">
+              <img src="img/like04.jpeg" alt="和太鼓「志童」の演奏の様子" width="200" height="200">
+            </div>
+            <div class="grid-3x3__item">
+              <img src="img/like05.JPG" alt="和太鼓「志童」の演奏の様子" width="200" height="200">
+            </div>
+          </div>
+          <p class="like-text">趣味は、和太鼓です。幼少期に習い、中学２・３年生の時は和太鼓部に所属していました。<br>約1年ほど前から現在の和太鼓グループに所属しています。</p>
+        </section>
+        
+        <!-- ---------- 動画再生ポップアップ ---------- -->
+        <div class="media-modal" id="likeVideoModal" aria-hidden="true">
+          <div class="media-modal__overlay" data-modal-close></div>
+          <div class="media-modal__dialog" role="dialog" aria-modal="true" aria-label="動画再生">
+            <button type="button" class="media-modal__close" data-modal-close aria-label="閉じる">&times;</button>
+            <video class="media-modal__video" controls playsinline></video>
+          </div>
+        </div>
+        
+      </main>
+      <footer class="footer">
+    <p class="footer__copy">&copy; Ono's Portfolio</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

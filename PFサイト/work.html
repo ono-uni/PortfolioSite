@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work | Ono's Portfolio</title>
+  <meta name="description" content="Ono のスキルと制作作品一覧。Webサイト、バナー、その他のデザイン作品をご紹介します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ========== ヘッダー / ナビゲーション ========== -->
+  <header class="header">
+    <div class="header__inner">
+      <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <nav class="nav" aria-label="メインメニュー">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Top</a></li>
+          <li class="nav__item"><a href="profile.html" class="nav__link">Profile</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="work.html" class="nav__link is-active">Work</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== Work ページ ========== -->
+    <section class="page-hero">
+      <h1 class="page-hero__title">Work</h1>
+    </section>
+
+    <!-- カテゴリーナビ（クリックで各セクションへスクロール） -->
+    <nav class="works-nav fade-in" aria-label="カテゴリー">
+      <a href="#category-website" class="works-nav__link">Website</a>
+      <a href="#category-banner" class="works-nav__link">Banner</a>
+      <a href="#category-others" class="works-nav__link">Others</a>
+    </nav>
+
+    <!--
+      作品カード
+      data-url / data-service / data-desc / data-purpose / data-target / data-period / data-tools に
+      それぞれの作品の詳細情報を入れてください。クリックするとポップアップ（モーダル）で表示されます。
+    -->
+
+    <!-- ---------- Website ---------- -->
+    <section class="works-category fade-in" id="category-website">
+      <h2 class="works-category__title">website</h2>
+      <div class="works-grid">
+        <article
+          class="works-item"
+          data-url="../cafe/cafe-komorebilirrari.html"
+          data-service="Cafe ”Komorebi Library”"
+          data-desc="記憶をあやし、思考を綴る、光と緑が呼吸する場所をコンセプトにした、架空のブックカフェのWebサイトです。「アンティークで重厚な雰囲気」をイメージして深みのあるフォレストグリーン、古紙のようなアイボリー、アクセントにゴールドを使用しました。"
+          data-purpose="ブランドの認知拡大：「ただのカフェ」ではなく、独自の体験を提供する場所であることを知ってもらう。来店予約の促進：週末の混雑を避けるため、事前の席予約システムへ誘導する。"
+          data-target="メインは都会の喧騒に疲れ、一人の時間を贅沢に楽しみたい30代〜40代。他には 古本やレコード、植物に囲まれた空間を好む人。"
+          data-period="約1ヶ月"
+          data-tools="Figma / HTML / CSS / JavaScript">
+          <a href="../cafe/cafe-komorebilirrari.html" class="works-item__link works-item__link--top">
+            <img src="../cafe/img/Komorebi-Library-full.png" alt="cafe-komorebilirrari仮想Webサイトデザイン" width="400" height="300">
+          </a>
+          <h3 class="works-item__title">Cafe Site</h3>
+          <p class="works-item__category">Website</p>
+        </article>
+
+        <article
+          class="works-item"
+          data-url="../勤怠管理/index.html"
+          data-service="勤怠管理サービス SyncTime"
+          data-desc="打刻、シフト管理、給与計算連携をワンストップで行う架空の勤怠管理サービスのWebサイトです。誠実さを感じるブルー系をベースに、ホワイトスペースを活かしたモダンなデザインにして、信頼感を意識しました。また、複雑なことを「シンプルに伝える」ために図解やアイコンの活用し、これなら導入できそうだなと思ってもらえるようにしました。"
+          data-purpose="「ITに詳しくない担当者でも、これなら導入できそう」という安心感と清潔感を与えること。"
+          data-target="人事・労務・総務の担当者、勤怠管理サービスの導入を検討している企業の経営者"
+          data-period="約2ヶ月"
+          data-tools="Figma / HTML / CSS / JavaScript">
+          <a href="../勤怠管理/index.html" class="works-item__link">
+            <img src="../勤怠管理/img/SyncTime--full.png" alt="勤怠管理サービス仮想Webサイトデザイン" width="400" height="300">
+          </a>
+          <h3 class="works-item__title">SyncTime</h3>
+          <p class="works-item__category">Website</p>
+        </article>
+
+        <!-- <article class="works-item">
+          <a href="#" class="works-item__link">
+            <img src="img/work-6.svg" alt="ショップサイトデザイン" width="400" height="300">
+          </a>
+          <h3 class="works-item__title">Shop Site</h3>
+          <p class="works-item__category">Website</p>
+        </article> -->
+      </div>
+    </section>
+
+    <!-- ---------- Banner ---------- -->
+    <section class="works-category fade-in" id="category-banner">
+      <h2 class="works-category__title">banner</h2>
+      <div class="works-grid">
+        <article
+          class="works-item"
+          data-url=""
+          data-service="こどもアート探検隊！"
+          data-desc="夏休みに開催される、小学生向けものづくりワークショップの告知バナーです。「エネルギッシュでポップな世界観」をコンセプトに、原色に近いイエロー・スカイブルー・ビビッドなオレンジを使い、絵の具のしぶきや工作のハサミ、段ボールなどのモチーフを散りばめて、楽しそうな工作がイメージできる雰囲気に仕上げました。"
+          data-purpose="夏休みに開催される、小学生向けのものづくりワークショップの参加者募集"
+          data-target="「子供にクリエイティブな体験をさせたい」と考えている30〜40代の親御さん、スマホを一緒に見ているお子さん"
+          data-period="約２週間"
+          data-tools="Illustrator">
+          <a href="#" class="works-item__link works-item__link--contain1">
+            <img src="../バナー/こどもアートバナーn.png" alt="ワークショップバナー" width="440" height="400">
+          </a>
+          <h3 class="works-item__title">Workshop Banner</h3>
+          <p class="works-item__category">Banner</p>
+        </article>
+
+        <article
+          class="works-item"
+          data-url=""
+          data-service="2026年最新Webマーケティング戦略セミナー"
+          data-desc="オンライン開催のWebマーケティングセミナー告知バナーです。青と白を基調に信頼感と未来感のあるデザインとし、CTAボタンはゴールドのグラデーションで一番目立つように強調、Webマーケティングを連想させる画像やグラフィックを添えました。"
+          data-purpose="2026年最新のセミナーであることをアピールしつつ、最新のトレンドや手法が学べることを強調して参加申し込みにつなげる"
+          data-target="Webマーケター、経営者、起業家"
+          data-period="約１週間"
+          data-tools="Figma">
+          <a href="#" class="works-item__link works-item__link--contain">
+            <img src="../バナー/セミナーバナー2.png" alt="セミナーバナー２" width="440" height="400">
+          </a>
+          <h3 class="works-item__title">Seminar Banner</h3>
+          <p class="works-item__category">Banner</p>
+        </article>
+
+        <article
+          class="works-item"
+          data-url=""
+          data-service="2026年最新Webマーケティング戦略セミナー"
+          data-desc="オンライン開催のWebマーケティングセミナー告知バナーです。青と白を基調に信頼感と未来感のあるデザインで、CTAボタンはゴールドのグラデーションで一番目立つように強調、親しみやすいように人物画像やグラフィックを添えました。"
+          data-purpose="2026年最新のセミナーであることをアピールしつつ、最新のトレンドや手法が学べることを強調して参加申し込みにつなげる"
+          data-target="Webマーケター、経営者、起業家"
+          data-period="約１週間"
+          data-tools="Figma">
+          <a href="#" class="works-item__link works-item__link--contain">
+            <img src="../バナー/セミナーバナー.png" alt="セミナーバナー１" width="440" height="400">
+          </a>
+          <h3 class="works-item__title">Seminar Banner</h3>
+          <p class="works-item__category">Banner</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ---------- Others ---------- -->
+    <section class="works-category fade-in" id="category-others">
+      <h2 class="works-category__title">others</h2>
+      <div class="works-grid">
+        <article
+          class="works-item"
+          data-url=""
+          data-service="サービス名をここに入力"
+          data-desc="写真のレタッチ作品です。"
+          data-purpose="目的をここに入力"
+          data-target="ターゲットをここに入力"
+          data-period="制作期間をここに入力"
+          data-tools="制作ツールをここに入力">
+          <a href="#" class="works-item__link works-item__link--contain">
+            <img src="img/work-4.svg" alt="レタッチ" width="400" height="300">
+          </a>
+          <h3 class="works-item__title">Retouch</h3>
+          <p class="works-item__category">Others</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== 作品詳細ポップアップ（モーダル） ========== -->
+  <div class="work-modal" id="workModal" aria-hidden="true">
+    <div class="work-modal__overlay" data-modal-close></div>
+    <div class="work-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="workModalTitle">
+      <button type="button" class="work-modal__close" data-modal-close aria-label="閉じる">&times;</button>
+
+      <div class="work-modal__media">
+        <img class="work-modal__img" src="" alt="">
+      </div>
+
+      <div class="work-modal__body">
+        <p class="work-modal__category"></p>
+        <h3 class="work-modal__title" id="workModalTitle"></h3>
+
+        <dl class="work-modal__list">
+          <div class="work-modal__row work-modal__row--url">
+            <dt>URL</dt>
+            <dd><a class="work-modal__url" href="" target="_blank" rel="noopener"></a></dd>
+          </div>
+          <div class="work-modal__row work-modal__row--service">
+            <dt>サービス名</dt>
+            <dd class="work-modal__service"></dd>
+          </div>
+          <div class="work-modal__row work-modal__row--desc">
+            <dt>説明</dt>
+            <dd class="work-modal__desc"></dd>
+          </div>
+          <div class="work-modal__row work-modal__row--purpose">
+            <dt>目的</dt>
+            <dd class="work-modal__purpose"></dd>
+          </div>
+          <div class="work-modal__row work-modal__row--target">
+            <dt>ターゲット</dt>
+            <dd class="work-modal__target"></dd>
+          </div>
+          <div class="work-modal__row work-modal__row--period">
+            <dt>制作期間</dt>
+            <dd class="work-modal__period"></dd>
+          </div>
+          <div class="work-modal__row work-modal__row--tools">
+            <dt>ツール</dt>
+            <dd class="work-modal__tools"></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__copy">&copy; Ono's Portfolio</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

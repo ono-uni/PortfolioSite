@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ono's Portfolio | Web Designer</title>
+  <meta name="description" content="Webデザイナー Ono のポートフォリオサイトです。デザインとコーディングを軸に、見やすく使いやすいWebサイトづくりを大切にしています。">
+  <!-- フォント（Google Fonts） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ========== ヘッダー / ナビゲーション ========== -->
+  <header class="header">
+    <div class="header__inner">
+      <!-- スマホ用メニューボタン（ハンバーガー） -->
+      <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <!-- ナビゲーション：Top → Profile → About → Work -->
+      <nav class="nav" aria-label="メインメニュー">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link is-active">Top</a></li>
+          <li class="nav__item"><a href="profile.html" class="nav__link">Profile</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="work.html" class="nav__link">Work</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== ヒーロー（ファーストビュー） ========== -->
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <!-- スタッガード（ずれて並ぶ）見出し -->
+        <p class="hero__line hero__line--welcome">Welcome to</p>
+        <h1 class="hero__line hero__line--name">Ono's</h1>
+        <p class="hero__line hero__line--portfolio">Portfolio</p>
+      </div>
+      <!-- スクロール案内 -->
+      <a href="#profile-preview" class="hero__scroll" aria-label="下にスクロール">
+        <span class="hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ========== Profile プレビュー ========== -->
+    <section class="preview preview--left fade-in" id="profile-preview">
+      <h2 class="preview__title">Profile</h2>
+      <div class="preview__body">
+        <div class="preview__content">
+          <p class="preview__text">プロフィール、好きなことなど</p>
+          <a href="profile.html" class="btn">VIEW MORE</a>
+        </div>
+        <!-- <div class="preview__media">
+          <img src="img/about-thumb.svg" alt="プロフィールイメージ" width="200" height="200">
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ========== About プレビュー ========== -->
+    <section class="preview preview--right fade-in" id="about-preview">
+      <h2 class="preview__title">About</h2>
+      <div class="preview__body">
+        <div class="preview__content">
+          <p class="preview__text">デザインへの考え方・制作への姿勢</p>
+          <a href="about.html" class="btn">VIEW MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Work プレビュー ========== -->
+    <section class="preview preview--left fade-in" id="work-preview">
+      <h2 class="preview__title">Work</h2>
+      <div class="preview__body">
+        <div class="preview__content">
+          <p class="preview__text">架空のWebサイト・バナーなどの作品</p>
+          <a href="work.html" class="btn">VIEW MORE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== フッター ========== -->
+  <footer class="footer">
+    <p class="footer__copy">&copy; 2026-Ono</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
