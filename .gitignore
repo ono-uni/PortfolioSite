@@ -5,9 +5,6 @@
 
 # サイトで使っていない、重すぎる元データ
 # （GitHubは1ファイル100MB超をpushできません）
-PFサイト/img/like06.mov
-PFサイト/img/like07.mov
-PFサイト/img/like08.MOV
 PFサイト/img/like02-original.jpg
 バナー/*.ai
 
