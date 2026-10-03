@@ -55,7 +55,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("../img/noise.jpeg");
+  background-image: url("../img/noise.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -683,7 +683,7 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../img/profile-img2.png");
+  background-image: url("../img/profile-img2.webp");
   background-size: cover;
   background-position: center;
   opacity: 0.3;
@@ -1165,6 +1165,12 @@ button {
     font-size: 24px;
   }
 
+  /* 縦書き用の上下線なので、横書きになるスマホでは非表示にする */
+  .preview__title::before,
+  .preview__title::after {
+    display: none;
+  }
+
   .preview--right .preview__title,
   .preview--right .preview__body,
   .preview--left .preview__title,
@@ -1195,6 +1201,27 @@ button {
 
   .works-item {
     width: 100%;
+  }
+
+  /* Skillsグリッド：スマホでは見出しを先頭にしてワンカラムで表示する */
+  .grid-3x3--skills {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3x3--skills .grid-3x3__item--center {
+    order: -1;
+    aspect-ratio: auto;
+    padding: 12px 0 24px;
+  }
+
+  /* ホバーできないスマホでは、説明文を常に表示する */
+  .grid-3x3--skills .grid-3x3__item--skill {
+    aspect-ratio: auto;
+    padding: 16px 10px;
+  }
+
+  .grid-3x3--skills .skill__caption {
+    opacity: 1;
   }
 }
 

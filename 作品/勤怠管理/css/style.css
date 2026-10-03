@@ -320,8 +320,7 @@ section {
 }
 .problems-footer-title {
     position: absolute;
-    bottom: -200px; /* 三角形の下の元の位置にぴったり合わせる */
-    left: 0;
+    bottom: -200px; 
     width: 100%;
     text-align: center;
     z-index: 20;
@@ -335,8 +334,6 @@ section {
 #features {
     padding-top: 150px;
 }
-
-
 
 /* ==========================================================================
    4. 機能・特徴（左右交互レイアウト）
@@ -713,4 +710,34 @@ section {
     .hero-buttons, .cta-buttons { flex-direction: column; width: 100%; }
     .nav { display: none; } /* かんたん化のためスマホナビは非表示 */
     .header-buttons .btn-outline { display: none; }
+
+    /* --- ヘッダー：ロゴがCTAボタンに隠れないように調整 --- */
+    .header-container { padding: 0 16px; }
+    .logo { max-width: none; flex-shrink: 0; }
+    .logo-icon img { width: 32px !important; height: auto !important; }
+    .logo-text { font-size: 18px; }
+    .header-buttons .btn-primary { padding: 8px 14px; font-size: 12px; min-width: auto; }
+
+    /* --- ファーストビュー：固定ヘッダーに隠れないように調整 --- */
+    .hero { height: auto; min-height: 100vh; align-items: flex-start; padding: 110px 0 60px; }
+    .hero-container { margin-top: 0; }
+    .hero-text h1 { margin-bottom: 24px; }
+    .hero-text p { margin-bottom: 24px; }
+    .hero-buttons { margin-top: 0; }
+
+    /* --- 「Sync Timeで解決できます」上の三角形を小さく調整 --- */
+    .problems { margin-bottom: 60px; }
+    .problems::after { height: 40px; bottom: -40px; clip-path: polygon(42% 0%, 50% 100%, 58% 0%); }
+    .problems-footer-title { bottom: -190px; margin: 16px 0 10px; }
+    #features { margin-top: 200px; }
+
+    /* --- 導入ベネフィット：管理工数カードをテキスト→グラフの縦並びに --- */
+    .benefit-item { flex-direction: column; text-align: center; }
+    .benefit-light { flex-direction: column; text-align: center; }
+    .benefit-text { margin-left: 0; }
+    .pie { margin-top: 16px; }
+
+    /* --- イベント・お知らせ：日付/タグと見出しを縦並びに --- */
+    .news-item { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .news-meta { width: auto; }
 }
