@@ -6,7 +6,7 @@
 # サイトで使っていない、重すぎる元データ
 # （GitHubは1ファイル100MB超をpushできません）
 img/like02-original.jpg
-作品/バナー/*.ai
+works/バナー/*.ai
 
 # サイトに関係ない個人的な資料
 Seed_改善提案.pptx.pdf
